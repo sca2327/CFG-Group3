@@ -1,21 +1,171 @@
+style.css
+
 html {
-	  width: 100%;
-      height: 100%;
-      overflow-x: hidden;
-      margin: 0;
-      padding: 0;
-}
-
-body {
-    min-height: 100%;
-    width: 100%;
-	margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+  width: 100%;
+    height: 100%;
     overflow-x: hidden;
- 
+    margin: 0;
+    padding: 0;
 }
 
+header {
+  height: 400px;
+  background-image: url(image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  color:white;
+  font-size: 3rem;
+  
+}
+
+
+  .container {
+    display: flex;
+    align-items: center; /* Dikey hizalama */
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 20px;
+    
+}
+
+.whoAreWeText {
+    padding: 60px;
+    margin-right: 40px;
+    margin-left: 100px;
+    padding-left: 20px;
+    color:#5A463A;
+    text-align: center;
+    
+}
+
+.whoAreWe2 {
+  text-align: center; /* Resmi ortala */
+  margin-right: 100px;
+  display: flex;
+  margin-left: 100px;
+  
+}
+
+.containerHours{
+  display: flex;
+  align-items: center; /* Dikey hizalama */
+  padding-left: 270px;
+  margin: 20px;
+}
+
+.sandGlass{
+  text-align: center; /* Resmi ortala */
+  margin-right: 100px;
+  display: flex;
+  margin-left: 100px;
+}
+
+.workingHours{
+  padding: 60px;
+    margin-right: 40px;
+    margin-left: 100px;
+    padding-left: 20px;
+    color:#5A463A;
+    text-align: center;
+}
+
+hr {
+  width: 80%;
+  background-color: #5A463A;
+}
+
+.contactUsContainer {
+  display: flex;
+  align-items: center; /* Dikey hizalama */
+  padding-left: 270px;
+  
+}
+
+.contactUsText {
+  padding: 60px;
+  margin-right: 4px;
+  margin-left: 20px;
+  padding-left: 20px;
+  color:#5A463A;
+  text-align: center;
+}
+
+.contactUsText h2 {
+  margin-top: 0; /* Başlık için üst boşluğu kaldır */
+}
+
+.contactUsMap {
+  text-align: center; /* Resmi ortala */
+  margin-right: 100px;
+  display: flex;
+  margin-left: 2px;
+}
+
+.contactUsMap iframe {
+  text-align: center; /* Resmi ortala */
+  margin-right: 100px;
+  display: flex;
+  margin-left: 100px;
+  filter: grayscale(100%); /* Gri tonlama */
+}
+
+/*Footer*/
+
+footer {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-content: center;
+  color: #5A463A;
+}
+
+footer > img {
+  
+  height: 150px;
+  
+}
+
+footer>ul {
+  margin: 0;
+  display: inline-block;
+}
+
+.social-media {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.social-media>img {
+  width: 50px;
+  padding: 0 15px;
+}
+
+
+.bottom-text {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 150px;
+}
+
+footer li {
+ list-style-type: none;
+}
+
+user agent stylesheet
+header {
+  display: block;
+}
+
+  
 /*Navbar section*/
 
 nav {
@@ -24,16 +174,12 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	text-transform: uppercase;
-	
-
-
 }
 
 
 nav>ul {
 	display: flex;
-	justify-content: space-between;
-    
+	justify-content: space-between;  
 }
 
 nav>ul>li {
@@ -98,122 +244,4 @@ button:hover {
     max-width: 800px;
     max-height: 80px;
     align-items: center;
-}
-
-/*Header section*/
-header {
-    height: 400px;
-    background-image: url('header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding-top: 30px;
-    box-sizing: border-box;
-}
-
-header > h1 {
-    margin: 0;
-    color: white;
-    font-size: 6rem;
-    margin-left: 30px;
-}
-
-.text-box {
-    width: 300px;
-    color: white;
-    margin-left: 30px;
-}
-
-/*Main section*/
-main {
-    margin: 40px 30px;
-    color: #5A463A;
-}
-
-.cards {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.card {
-    width: 200px;
-    height: 400px;
-}
-
-.card>img {
-    height: 300px;
-    width: 200px;
-}
-
-.coffee-pic {
-    object-fit: cover;
-    height: 400px;
-}
-
-.coctail {
-    object-fit: cover;
-}
-
-.card>h3 {
-    border-right: 1px solid #5A463A;
-    border-left: 1px solid #5A463A;
-    border-bottom: 1px solid #5A463A;
-    text-align: center;
-    margin: 0;
-    padding: 5px 0;
-}
-
-hr {
-    width: 80%;
-    background-color: #5A463A;
-}
-
-/*Footer*/
-
-footer {
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    align-content: center;
-    color: #5A463A;
-}
-
-footer > img {
-    
-    height: 150px;
-    
-}
-
-footer>ul {
-    margin: 0;
-    display: inline-block;
-}
-
-.social-media {
-    width: 200px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    margin-right: 50px;
-}
-
-.social-media>img {
-    width: 50px;
-    padding: 0 15px;
-}
-
-
-
-.bottom-text {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    height: 150px;
-}
-
-footer li {
-   list-style-type: none;
 }
