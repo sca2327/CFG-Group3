@@ -103,7 +103,7 @@ button:hover {
 /*Header section*/
 header {
     height: 400px;
-    background-image: url('img/header.jpg');
+    background-image: url('header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
